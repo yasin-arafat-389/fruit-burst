@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/fruit6.png" type="image/x-icon" />
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Fruit Burst</title>
+  </head>
+  <body class="font">
+    <!-- Nav -->
+    <div
+      class="navbar w-[90%] flex justify-between md:w-[90%] md:flex md:justify-between lg:w-[80%] lg:bg-[#F85559] mx-auto mt-9 rounded-full lg:grid lg:grid-cols-3 justify-items-center lg:py-4"
+    >
+      <ul
+        class="hidden md:hidden lg:flex gap-5 text-[15px] font-medium text-[#fff]"
+      >
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">About Us</li>
+        <li class="cursor-pointer">Shop</li>
+        <li class="cursor-pointer">All Fruits</li>
+      </ul>
+      <div class="logo">
+        <img class="w-[25%]" src="./images/logo.png" alt="" />
+        <h2 class="text-[20px] lg:text-[30px] font-bold lg:text-[#fff] ml-4">
+          Fruit Burst
+        </h2>
+      </div>
+      <div class="lg:hidden hamburger">
+        <img class="w-[35px]" src="./images/hamburger.svg" alt="" />
+      </div>
+      <div class="hidden form-control lg:flex flex-row w-full justify-end">
+        <input
+          type="text"
+          placeholder="Search here"
+          class="input input-bordered lg:w-[80%] rounded-full border-0 focus:outline-none"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 relative right-[40px]"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
